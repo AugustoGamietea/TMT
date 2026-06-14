@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fondo: #0f0f0f;
+    --fondo_card: #1a1a1a;
+    --fondo_card2: #1f1f1f;
+    --fondo_card3: #242424;
+    --boton: #935633;
+    --hover_boton: #6F4327;
+    --texto_titulo: #f0ffff;
+    --texto_sec: #b3b3b3;
+    --iconos: #8B5C2C;
+}
+
+body {
+    background-color: var(--fondo);
+}
