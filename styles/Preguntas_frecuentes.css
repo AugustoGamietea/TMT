@@ -1,0 +1,59 @@
+.preg-titulo, h1 {
+    color: var(--texto_titulo);
+    font-family: "DM Serif Display", sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.preg-contenido {
+    color: var(--texto_sec);
+    font-family: "Inter", sans-serif;
+    max-width: 90%;
+}
+
+.pregunta {
+    background-color: var(--fondo_card2);
+    margin: 3vh 0;
+    padding: 3vh 1vw;
+}
+
+.preg_frec-local {
+    flex: 1;
+    height: 100%;
+}
+
+#Preg_frec {
+    display: flex;
+}
+
+#Preg_frec > div {
+    flex: 1;
+    margin: 8vh 9vw 5vh;
+}
+
+.abierto, .preg-contenido {
+    height: fit-content;
+}
+
+.preg-titulo, .preg-flecha {
+    display: inline-block;
+}
+
+.preg-titulo {
+    font-size: 24px;
+}
+
+.abierto .preg-titulo {
+    margin: 0 0 1.5vh;
+}
+
+.preg-flecha {
+    float: right;
+    position: relative;
+    top: 1.5vh;
+    right: 0.25vw;
+    height: 2.25vh;
+}
