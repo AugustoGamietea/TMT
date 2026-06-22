@@ -1,5 +1,5 @@
 
-import flecha from '../assets/preg_frec-flecha.svg'
+import flecha from '../assets/flecha.svg'
 import local from '../assets/local1.png'
 import '../styles/Preguntas_frecuentes.css'
 

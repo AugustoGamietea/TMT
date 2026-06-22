@@ -4,20 +4,26 @@
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 4.5vh;
     font-weight: 400;
 }
 
 .preg-contenido {
     color: var(--texto_sec);
     font-family: "Inter", sans-serif;
-    max-width: 90%;
+    max-width: 89%;
+    font-size: 2.05vh;
 }
 
 .pregunta {
     background-color: var(--fondo_card2);
-    margin: 3vh 0;
-    padding: 3vh 1vw;
+    margin: 2.45vh 0;
+    padding: 2vh 1vw;
+    min-height: 3.8vh;
+}
+
+.pregunta:last-of-type {
+    margin-bottom: 0;
 }
 
 .preg_frec-local {
@@ -27,11 +33,12 @@ h1 {
 
 #Preg_frec {
     display: flex;
+    flex-direction: row;
 }
 
 #Preg_frec > div {
     flex: 1;
-    margin: 8vh 9vw 5vh;
+    margin: 6vh 9.1vw;
 }
 
 .abierto, .preg-contenido {
@@ -43,11 +50,11 @@ h1 {
 }
 
 .preg-titulo {
-    font-size: 24px;
+    font-size: 2.7vh;
 }
 
 .abierto .preg-titulo {
-    margin: 0 0 1.5vh;
+    margin: 0 0 1vh;
 }
 
 .preg-flecha {
@@ -55,5 +62,13 @@ h1 {
     position: relative;
     top: 1.5vh;
     right: 0.25vw;
-    height: 2.25vh;
+    height: 1.5vh;
+}
+
+.abierto {
+    padding-bottom: 1.35vh;
+}
+
+#preg_frec-local {
+    height: 98vh;
 }
