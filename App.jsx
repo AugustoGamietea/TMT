@@ -7,7 +7,7 @@ export default function App() {
         <Router >
             <Header />
             <Switch>
-                <Route path='/Preguntas_Frecuentes' component={Preguntas_frecuentes} />
+                <Route path='/Preguntas_frecuentes' component={Preguntas_frecuentes} />
             </Switch>
         </Router>
     )
