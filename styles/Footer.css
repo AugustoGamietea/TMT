@@ -1,0 +1,47 @@
+footer {
+    background-color: var(--fondo_card3);
+    padding: 0 5vw;
+}
+
+footer #logo {
+    height: 19vh;
+    flex: 1;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    padding: calc(10vh / 3) 1vw;
+}
+
+#links > div {
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+}
+
+#links > div div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 7.25vw;
+}
+
+#links p {
+    font-family: "DM Serif Display", sans-serif;
+    color: var(--texto_titulo);
+    font-size: 2.75vh;
+}
+
+#links a, #links button {
+    margin-top: calc(7vh / 3);
+    font-family: "Inter";
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--texto_sec);
+}
+
+footer button {
+    
+}
