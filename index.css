@@ -23,12 +23,12 @@ body {
 
 @media (orientation: landscape) {
     .responsive {
-        display: none;
+        display: none !important;
     }
 }
 @media (orientation: portrait) {
     .escritorio {
-        display: none;
+        display: none !important;
     }
 }
 

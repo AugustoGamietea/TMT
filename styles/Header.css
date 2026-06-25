@@ -9,7 +9,7 @@ header {
     box-sizing: border-box;
 }
 
-header > div:first-of-type {
+header #titulo {
     display: flex;
     flex: 1;
     align-items: center;
@@ -17,17 +17,17 @@ header > div:first-of-type {
     margin-left: 0.5vw;
 }
 
-#logo {
+header #logo {
     flex: 0.2;
     height: 7.25vh;
     cursor: pointer;
 }
 
-#titulo, #submenu {
+header #titulo h1, header #submenu {
     color: var(--texto_titulo);
 }
 
-#titulo {
+header #titulo h1 {
     font-family: "DM Serif Display", sans-serif;
     font-weight: 400;
     font-size: 2.75vh;
@@ -35,26 +35,32 @@ header > div:first-of-type {
     flex: 0.75;
 }
 
-#submenu {
+header #submenu {
     display: flex;
     flex: 1;
     align-items: center;
 }
 
-#submenu p {
+header #submenu p, header #submenu a {
     font-size: 2.25vh;
     font-family: "Inter", sans-serif;
     margin-right: 1.5vw;
 }
 
-.link {
+#submenu a {
     cursor: pointer;
+    color: var(--texto_titulo);
+    text-decoration: none;
 }
 
-#flecha {
-    height: 0.8vh;
+header #flecha {
+    all: unset;
     margin-left: -0.75vw;
     top: 0.15vh;
+}
+
+header #flecha img {
+    height: 0.8vh;
     position: relative;
     cursor: pointer;
 }
@@ -80,6 +86,7 @@ nav input {
     position: relative;
     left: 0.75vw;
     margin-right: 0.75vw;
+    font-size: calc(5vh/3);
 }
 
 nav input::placeholder {
@@ -92,7 +99,7 @@ nav img {
     flex: 1;
 }
 
-#iconos {
+header #iconos {
     display: flex;
     flex-direction: row;
     flex: 0.5;
@@ -101,7 +108,7 @@ nav img {
     position: relative;
 }
 
-#iconos img {
+header #iconos img {
     height: 3vh;
     flex: 1;
 }
