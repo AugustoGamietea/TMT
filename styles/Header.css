@@ -104,7 +104,7 @@ header #iconos {
     flex-direction: row;
     flex: 0.5;
     justify-content: right;
-    left: 1vw;
+    margin-left: 1vw;
     position: relative;
 }
 

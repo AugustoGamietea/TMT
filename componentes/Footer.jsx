@@ -16,9 +16,9 @@ export default function Footer() {
                     </div>
                     <div id='catalogo'>
                         <p>Categorias</p>
-                        <Link href='/Catalogo/:Cocina'>Cocina</Link>
-                        <Link href='/Catalogo/:Comedor'>Comedor</Link>
-                        <Link href='/Catalogo/:Living'>Living</Link>
+                        <Link href='/Catalogo/Cocina'>Cocina</Link>
+                        <Link href='/Catalogo/Comedor'>Comedor</Link>
+                        <Link href='/Catalogo/Living'>Living</Link>
                     </div>
                     <div id='informacion'>
                         <p>Información</p>

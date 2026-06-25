@@ -22,6 +22,7 @@ export default function App() {
                 <Route path='/' component={Home}/>
                 <Route path='/Detalle_producto' component={Detalle_producto}/>
                 <Route path='/Carrito' component={Carrito}/>
+                <Route path='/Catalogo/:cat' component={Catalogo}/>
                 <Route path='/Catalogo' component={Catalogo}/>
                 <Route path='/Favoritos' component={Favoritos}/>
                 <Route path='/Sobre_nosotros' component={Sobre_nosotros}/>
