@@ -57,12 +57,17 @@
     margin: 0 0 1vh;
 }
 
+.abierto .preg-flecha {
+    transform: rotateZ(0deg) !important;
+}
+
 .preg-flecha {
     float: right;
     position: relative;
     top: 1.5vh;
     right: 0.25vw;
     height: 1.5vh;
+    transform: rotateZ(180deg);
 }
 
 .abierto {
@@ -71,4 +76,20 @@
 
 #preg_frec-local {
     height: 98vh;
+}
+
+@media (max-width: 750px) {
+    #preg_frec-local {
+        display: none;
+    }
+
+    #Preg_frec h1 {
+        text-align: center;
+        font-size: 3.8vh;
+    }
+
+    #Preg_frec > div {
+        margin: 6vh 5vw;   
+    }
+
 }
