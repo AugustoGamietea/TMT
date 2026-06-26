@@ -1,6 +1,9 @@
 import '../styles/Footer.css'
 import { Link } from 'wouter'
 import logo from '../assets/logo.svg'
+import whatsapp from '../assets/whatsapp.svg'
+import instagram from '../assets/instagram.svg'
+import facebook from '../assets/facebook.svg'
 
 export default function Footer() {
     return (
@@ -28,9 +31,9 @@ export default function Footer() {
                     </div>
                     <div id='contactos'>
                         <p>Contactos</p>
-                        <a href="">{/* <img src={whatsapp}/> */}+54 9 11 4455-6677</a>
-                        <a href="">{/* <img src={Instagram}/> */}Instagram</a>
-                        <a href="">{/* <img src={Facebook}/> */}Facebook</a>
+                        <a href=""><img src={whatsapp}/>+54 9 11 4455-6677</a>
+                        <a href=""><img src={instagram}/>Instagram</a>
+                        <a href=""><img src={facebook}/>Facebook</a>
                     </div>
                 </div>
             </div>

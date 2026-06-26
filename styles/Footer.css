@@ -43,6 +43,20 @@ footer #logo {
     font-family: "Inter";
 }
 
+#links button {
+    cursor: pointer;
+}
+
+#links div img {
+    height: calc(10vh/3);
+    margin-right: 0.56vw;
+}
+
+#links > div:last-of-type a {
+    display: flex;
+    align-items: center;
+}
+
 footer a {
     text-decoration: none;
     color: var(--texto_sec);
