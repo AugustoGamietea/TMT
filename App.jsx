@@ -28,6 +28,7 @@ export default function App() {
                 <Route path='/Sobre_nosotros' component={Sobre_nosotros}/>
                 <Route path='/Terminos_y_condiciones' component={Terminos_y_condiciones}/>
                 <Route path='/Preguntas_frecuentes' component={Preguntas_frecuentes} />
+                <Route path='/Locales' component={Locales} />
             </Switch>
             <Footer />
         </Router>
