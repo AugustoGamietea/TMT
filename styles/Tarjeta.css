@@ -1,0 +1,61 @@
+.card {
+  width: 200px;
+  height: 270px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mueble-img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-info h3 {
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.card-info span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.card-info p {
+  color:#B3B3B3;
+  font-size: 13px;
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-fav {
+  background-color: #935633;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-fav img {
+  width: 17px;
+  height: 17px;
+}
