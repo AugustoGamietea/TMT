@@ -25,40 +25,52 @@ export default function Home(){
                 <h2>Categorías destacadas</h2>
                 <div className="cont-cat">
                     <div className="comedor">
-                        <div className="cont-icono">
-                            <img src={comedor} className='icono' />
-                        </div>
-                        <Link href='/Catalogo/Comedor' className='btn-cat'>Comedor</Link>
+                        <Link href='/Catalogo/Comedor' className='btn-cat'> 
+                            <div className="cont-icono">
+                                <img src={comedor} className='icono'/>
+                            </div>
+                            <h3>Comedor</h3>
+                        </Link>
                     </div>
                     <div className="dormitorio">
-                        <div className="cont-icono">
-                            <img src={dormitorio} className='icono' />
-                        </div>
-                        <Link href='/Catalogo/Dormitorio' className='btn-cat'>Dormitorio</Link>
+                        <Link href='/Catalogo/Dormitorio' className='btn-cat'> 
+                            <div className="cont-icono">
+                                <img src={dormitorio} className='icono'/>
+                            </div>
+                            <h3>Dormitorio</h3>
+                        </Link>
                     </div>
                     <div className="cajones">
-                        <div className="cont-icono">
-                            <img src={cajones} className='icono' />
-                        </div>
-                        <Link href='/Catalogo/Comedor' className='btn-cat'>Cajones</Link>
+                        <Link href='/Catalogo/Cajones' className='btn-cat'> 
+                            <div className="cont-icono">
+                                <img src={cajones} className='icono'/>
+                            </div>
+                            <h3>Cajones</h3>
+                        </Link>
                     </div>
                     <div className="living">
-                        <div className="cont-icono">
-                            <img src={living} className='icono'/>
-                        </div>
-                        <Link href='/Catalogo/Living' className='btn-cat'>Living</Link>
+                        <Link href='/Catalogo/Living' className='btn-cat'> 
+                            <div className="cont-icono">
+                                <img src={living} className='icono'/>
+                            </div>
+                            <h3>Living</h3>
+                        </Link>
                     </div>
                     <div className="cocina">
-                        <div className="cont-icono">
-                            <img src={cocina} className='icono'/>
-                        </div>
-                        <Link href='/Catalogo/Cocina' className='btn-cat'>Cocina</Link>
+                        <Link href='/Catalogo/Cocina' className='btn-cat'> 
+                            <div className="cont-icono">
+                                <img src={cocina} className='icono'/>
+                            </div>
+                            <h3>Cocina</h3>
+                        </Link>
                     </div>
                     <div className="oficina">
-                        <div className="cont-icono">
-                            <img src={oficina} className='icono'/>
-                        </div>
-                        <Link href='/Catalogo/Oficina' className='btn-cat'>Oficina</Link>
+                        <Link href='/Catalogo/Oficina' className='btn-cat'> 
+                            <div className="cont-icono">
+                                <img src={oficina} className='icono'/>
+                            </div>
+                            <h3>Oficina</h3>
+                        </Link>
                     </div>
                 </div>
                <div className="separador">

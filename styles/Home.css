@@ -43,8 +43,10 @@
 
 .btn-cat{
     text-decoration: none;
-    margin-left: 35px;
     font-size: 25px;
+}
+.btn-cat h3{
+    margin-left: 2vw;
 }
 
 .cont-icono {
