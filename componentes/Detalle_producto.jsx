@@ -6,6 +6,7 @@ import Mueble_Sec4 from "../assets/mueble-sec4.png"
 import Carrito from "../assets/Carrito2.svg"
 import Flecha from "../assets/flecha.svg"
 import "../styles/DetalleProducto.css"
+import Tarjeta from '../componentes/Tarjeta'
 
 export default function Detalle_producto() {
     return (
@@ -83,7 +84,12 @@ export default function Detalle_producto() {
                 </div>
 
                 <div className="grid-tarjetas">
-
+                    <Tarjeta />
+                    <Tarjeta />
+                    <Tarjeta />
+                    <Tarjeta />
+                    <Tarjeta />
+                    <Tarjeta />
                 </div>
             </section>
         </div>
