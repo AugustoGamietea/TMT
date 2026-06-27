@@ -1,9 +1,9 @@
-.preg-titulo, h1 {
+.preg-titulo, #Preg_frec h1 {
     color: var(--texto_titulo);
     font-family: "DM Serif Display", sans-serif;
 }
 
-h1 {
+#Preg_frec h1 {
     font-size: 4.5vh;
     font-weight: 400;
 }
