@@ -1,5 +1,5 @@
 export default function Carrito() {
     return (
-        <div className="vacio">Asignado a Mateo</div>
+        <div className="vacio">Carrito: Asignado a Mateo</div>
     )
 }
