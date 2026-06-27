@@ -56,6 +56,10 @@
     flex: 1;
 }
 
+.info-producto h2 {
+    font-family: "DM Serif Display", sans-serif;
+}
+
 .info-item {
     display: flex;
     justify-content: space-between;
@@ -66,6 +70,7 @@
 
 .info-item img {
     width: 20px;
+    cursor: pointer;
 }
 
 .descripcion {
@@ -81,12 +86,15 @@
 }
 
 .info-descripcion img {
+    cursor: pointer;
+    transform: rotateZ(180deg);
     width: 20px;
 }
 
 .descripcion p {
     font-size: 15px;
     color: #B3B3B3;
+    font-family: "Inter", sans-serif;
 }
 
 .colores {
@@ -100,6 +108,7 @@
     height: 22px;
     border-radius: 50%;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .color-activo {
@@ -135,7 +144,7 @@
     font-weight: 300;
 }
 
-.cantidad:hover {
+.cantidad button:hover {
     background-color: #935633;
 }
 
@@ -143,6 +152,7 @@
     width: 40px;
     font-size: 30px;
     text-align: center;
+    font-family: "Inter", sans-serif;
 }
 
 .btn-carrito {
@@ -157,6 +167,7 @@
     border-radius: 5px;
     font-size: 20px;
     width: 335px;
+    font-family: "Inter";
 }
 
 .btn-carrito img {
