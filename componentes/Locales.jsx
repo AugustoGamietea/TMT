@@ -14,6 +14,7 @@ export default function Locales() {
         <Home />
         <div className='cont-locales'>
             <div className="locales">
+                <button className='btn-cerrar-l'><Link href='/'>X</Link></button>
                 <h2>Conoce nuestros locales</h2>
                 <div className="local">
                     <img src={local} className="local-img" />

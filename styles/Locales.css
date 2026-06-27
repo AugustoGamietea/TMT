@@ -7,15 +7,14 @@
     align-items: center;
     z-index: 1000;
 }
-
 .locales {
     color: white;
-    width: 80%;
+    width: 85%;
     max-height: 90vh;
     background: #0F0F0F;
-    border: 2px solid #1F1F1F;
-    border-radius: 8px;
-    padding: 10vh;
+    border: 5px solid #1F1F1F;
+    border-radius: 20px;
+    padding: 5vh;
     overflow-y: auto;
 }
 
@@ -37,6 +36,7 @@
     width: 300px;
     height: 271px;
     margin-left: 30px;
+    border-radius: 10px;
 }
 
 .local-info {
@@ -69,13 +69,13 @@
 
 .local-separador {
     background-color: white;
-    height: 20vw;
-    width: 0.2vw;
-    margin: 0 40px;
+    height: 15vw;
+    width: 0.1vw;
+    margin: 0 5vw;
 }
 
 .extra {
-    margin: 0 0.3vw;
+    margin: 0 0.5vw;
     display: flex;
 }
 
@@ -117,4 +117,19 @@
 .mail p {
     margin-top: 0;
     font-size: 20px;
+}
+
+.btn-cerrar-l{
+    float: right;
+    padding: 0.6vw;
+    width: 3.3vw;
+    font-size: 2vw;
+    background-color: #935633;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-cerrar-l:hover{
+    cursor: pointer;
+    background-color: #6F4327;
 }
