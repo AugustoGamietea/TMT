@@ -14,13 +14,13 @@ footer #logo {
     padding: calc(10vh / 3) 1vw;
 }
 
-#links > div {
+#links>div {
     display: flex;
     flex-direction: row;
     flex: 5;
 }
 
-#links > div div {
+#links>div div {
     display: flex;
     flex-direction: column;
     margin: 0 5vw;
@@ -37,7 +37,8 @@ footer #logo {
     font-size: 2.75vh;
 }
 
-#links a, #links button {
+#links a,
+#links button {
     width: max-content;
     margin-top: calc(7vh / 3);
     font-family: "Inter";
@@ -52,7 +53,7 @@ footer #logo {
     margin-right: 0.56vw;
 }
 
-#links > div:last-of-type a {
+#links>div:last-of-type a {
     display: flex;
     align-items: center;
 }
@@ -74,19 +75,63 @@ footer span {
     display: block;
 }
 
-footer > div:last-of-type {
+footer>div:last-of-type {
     padding: 2vh calc(2vw/3) 3vh;
 }
 
-footer > div:last-of-type * {
+footer>div:last-of-type * {
     display: inline-block;
     font-family: "Inter", sans-serif;
 }
 
-footer > div:last-of-type p {
+footer>div:last-of-type p {
     color: var(--texto_sec);
 }
 
-footer > div:last-of-type a {
+footer>div:last-of-type a {
     float: right;
+}
+
+@media (max-width: 750px) {
+    footer {
+        width: 90vw;
+    }
+
+    #links>div {
+        flex-wrap: wrap;
+        gap: 2vh 20vw;
+    }
+
+    #links>div div {
+        margin: 2vw 1vw;
+    }
+
+    #links {
+        flex-direction: column;
+        align-items: center;
+        padding: calc(5vh / 3) 1vw;
+    }
+
+    footer #logo {
+        height: 10vh;
+        width: 20vh;
+    }
+
+    .responsive {
+        margin-top: 2vh;
+    }
+
+    footer>div:last-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    footer>div:last-of-type * {
+        display: block;
+    }
+
+    footer>div:last-of-type a {
+        float: none;
+    }
 }

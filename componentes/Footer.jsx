@@ -11,6 +11,7 @@ export default function Footer() {
             <div id='links'>
                 <img id='logo' src={logo}/>
                 <div>
+                    <span className='responsive'></span>
                     <div id='paginas'>
                         <p>Páginas</p>
                         <Link href='/'>Home</Link>
