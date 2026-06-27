@@ -27,9 +27,9 @@ export default function Header() {
                 <img src={lupa}/>
             </nav>
             <div id="iconos">
-                <img src={whatsapp}/>
-                <img className='escritorio' src={fav}/>
-                <img src={carrito}/>
+                <div className="icono"><img src={whatsapp}/></div>
+                <div className='escritorio' className="icono"><img src={fav}/></div>
+                <div className="icono"><img src={carrito}/></div>
             </div>
         </header>
     )
