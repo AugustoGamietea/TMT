@@ -59,7 +59,7 @@
 .telefono{
     display: flex;
 }
-.separador{
+.local-separador{
     background-color: white;
     height: 200px;
     width: 1px;

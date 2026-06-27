@@ -60,7 +60,7 @@ export default function Locales(){
                             <p>2901 234 567</p>
                         </div>
                     </div>
-                    <div className="separador"></div>
+                    <div className="local-separador"></div>
                     <div className="extra">
                         <div className="maps">
                             <img src={maps} />
