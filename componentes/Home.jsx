@@ -17,7 +17,7 @@ export default function Home(){
                 <div className="texto-banner">
                     <h1>Conoce todos nuestros muebles disponibles</h1>
                     <div className="cont-btn">
-                        <button className="btn-product">Ver más productos</button>                        
+                        <Link href="/Catalogo" className='btn-product'>Ver más productos</Link>                        
                     </div>
                 </div>
             </div>
@@ -28,37 +28,37 @@ export default function Home(){
                         <div className="cont-icono">
                             <img src={comedor} className='icono' />
                         </div>
-                        <h3>Comedor</h3>
+                        <Link href='/Catalogo/Comedor' className='btn-cat'>Comedor</Link>
                     </div>
                     <div className="dormitorio">
                         <div className="cont-icono">
                             <img src={dormitorio} className='icono' />
                         </div>
-                        <h3>Dormitorio</h3>
+                        <Link href='/Catalogo/Dormitorio' className='btn-cat'>Dormitorio</Link>
                     </div>
                     <div className="cajones">
                         <div className="cont-icono">
                             <img src={cajones} className='icono' />
                         </div>
-                        <h3>Cajones</h3>
+                        <Link href='/Catalogo/Comedor' className='btn-cat'>Cajones</Link>
                     </div>
                     <div className="living">
                         <div className="cont-icono">
                             <img src={living} className='icono'/>
                         </div>
-                        <h3>Living</h3>
+                        <Link href='/Catalogo/Living' className='btn-cat'>Living</Link>
                     </div>
                     <div className="cocina">
                         <div className="cont-icono">
                             <img src={cocina} className='icono'/>
                         </div>
-                        <h3>Cocina</h3>
+                        <Link href='/Catalogo/Cocina' className='btn-cat'>Cocina</Link>
                     </div>
                     <div className="oficina">
                         <div className="cont-icono">
                             <img src={oficina} className='icono'/>
                         </div>
-                        <h3>Oficina</h3>
+                        <Link href='/Catalogo/Oficina' className='btn-cat'>Oficina</Link>
                     </div>
                 </div>
                <div className="separador">
