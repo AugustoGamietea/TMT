@@ -93,11 +93,18 @@ nav input::placeholder {
     color: var(--texto_sec);
 }
 
+nav a {
+    height: 100%;
+    cursor: pointer;
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav img {
     position: relative;
     height: 2.25vh;
-    flex: 1;
-    cursor: pointer;
 }
 
 header #iconos {
