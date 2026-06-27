@@ -7,6 +7,7 @@ import living from '../assets/living-icono.svg'
 import cocina from '../assets/cocina-icono.svg' 
 import oficina from '../assets/oficina-icono.svg'
 import Tarjeta from "./Tarjeta";
+import { Link } from 'wouter'
 
 export default function Home(){
     return(
