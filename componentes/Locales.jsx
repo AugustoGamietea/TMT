@@ -6,6 +6,7 @@ import telefono from '../assets/telefono-icono.svg'
 import maps from '../assets/maps-icono.svg'
 import mail from '../assets/mail-icono.svg'
 import Home from './Home'
+import { Link } from 'wouter'
 
 export default function Locales() {
     return (
@@ -32,7 +33,7 @@ export default function Locales() {
                             <p>2901 234 567</p>
                         </div>
                     </div>
-                    <div className="separador"></div>
+                    <div className="local-separador"></div>
                     <div className="extra">
                         <div className="maps">
                             <img src={maps} />
@@ -62,7 +63,7 @@ export default function Locales() {
                             <p>2901 234 567</p>
                         </div>
                     </div>
-                    <div className="separador"></div>
+                    <div className="local-separador"></div>
                     <div className="extra">
                         <div className="maps">
                             <img src={maps} />

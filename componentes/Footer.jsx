@@ -25,7 +25,7 @@ export default function Footer() {
                     </div>
                     <div id='informacion'>
                         <p>Información</p>
-                        <button>Locales</button>
+                        <Link href='/Locales'>Locales</Link>
                         <Link href='/Preguntas_frecuentes'>Preguntas frecuentes</Link>
                         <Link href='/Terminos_y_condiciones'>Terminos y condiciones</Link>
                     </div>

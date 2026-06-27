@@ -1,7 +1,7 @@
 .cont-locales {
     position: fixed;
     inset: 0;
-    background: #232323;
+    background: rgba(35, 35, 35, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,6 @@
 .locales {
     color: white;
     width: 80%;
-    max-width: 1200px;
     max-height: 90vh;
     background: #0F0F0F;
     border: 2px solid #1F1F1F;
@@ -52,7 +51,7 @@
 
 .local-info p {
     margin-bottom: 12px;
-    margin: 15px;
+    margin: 20px;
     font-size: 20px;
 }
 
@@ -68,15 +67,15 @@
     display: flex;
 }
 
-.separador {
+.local-separador {
     background-color: white;
-    height: 200px;
-    width: 1px;
+    height: 20vw;
+    width: 0.2vw;
     margin: 0 40px;
 }
 
 .extra {
-    margin: 0 60px;
+    margin: 0 0.3vw;
     display: flex;
 }
 
