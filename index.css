@@ -20,24 +20,3 @@
 body {
     background-color: var(--fondo);
 }
-
-@media (orientation: landscape) {
-    .responsive {
-        display: none !important;
-    }
-}
-@media (orientation: portrait) {
-    .escritorio {
-        display: none !important;
-    }
-}
-
-.vacio {
-    all: unset;
-    color: #fff;
-    background-color: #000;
-}
-
-.f {
-    display: none;
-}

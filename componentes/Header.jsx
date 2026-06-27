@@ -1,5 +1,4 @@
 import '../styles/Header.css'
-import { Link } from 'wouter'
 import logo from '../assets/logo.svg'
 import flecha from '../assets/flecha.svg'
 import lupa from '../assets/lupa.svg'
@@ -10,25 +9,23 @@ import carrito from '../assets/carrito.svg'
 export default function Header() {
     return (
         <header>
-            <div id="titulo">
+            <div>
                 <img id='logo' src={logo}/>
-                <h1>TMT | Muebleria</h1>
+                <h1 id="titulo">TMT | Muebleria</h1>
             </div>
-            <div id="submenu" className='escritorio'>
-                <Link href='/'>Home</Link>
+            <div id="submenu">
+                <p className='link'>Home</p>
                 <p>|</p>
-                <Link href='/Carrito'>Productos</Link>
-                <button id="flecha">
-                    <img src={flecha}/>
-                </button>
+                <p className='link'>Productos</p>
+                <img id="flecha" src={flecha}/>
             </div>
-            <nav className='escritorio'>
+            <nav>
                 <input type="text" placeholder='¿Que estas buscando?'/>
                 <img src={lupa}/>
             </nav>
             <div id="iconos">
                 <img src={whatsapp}/>
-                <img className='escritorio' src={fav}/>
+                <img src={fav}/>
                 <img src={carrito}/>
             </div>
         </header>
