@@ -29,6 +29,7 @@ export default function App() {
                 <Route path='/Terminos_y_condiciones' component={Terminos_y_condiciones}/>
                 <Route path='/Preguntas_frecuentes' component={Preguntas_frecuentes} />
                 <Route path='/Locales' component={Locales} />
+                <Route path='/Favoritos' component={Favoritos} />
             </Switch>
             <Footer />
         </Router>

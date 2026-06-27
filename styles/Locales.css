@@ -127,6 +127,9 @@
     background-color: #935633;
     border: none;
     border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family:"Inter";
 }
 
 .btn-cerrar-l:hover{
