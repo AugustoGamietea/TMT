@@ -25,7 +25,8 @@ export default function Footer() {
                     </div>
                     <div id='informacion'>
                         <p>Información</p>
-                        <button>Locales</button>
+                        {/* <button>Locales</button> */} {/* Cuando podamos usar javascript este boton va a mostrar la vista de Locales */}
+                        <Link href='/Locales'>Locales</Link>
                         <Link href='/Preguntas_frecuentes'>Preguntas frecuentes</Link>
                         <Link href='/Terminos_y_condiciones'>Terminos y condiciones</Link>
                     </div>
