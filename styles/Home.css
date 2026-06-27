@@ -39,8 +39,8 @@
   }
   .cont-icono{
     margin: 5px;
-    height: 22vh;
-    width: 22vh;
+    height: 20vh;
+    width: 20vh;
     align-items: center;
     justify-content: center;
     background-color: #1F1F1F;
@@ -55,7 +55,7 @@
     transform: translateY(-10px);
   }
   .icono{
-    margin-top: 25px;
+    margin-top: 30px;
   }
   .cont-banner{
     position: relative;
@@ -81,7 +81,7 @@
     margin-top: 20px;
     margin-left: 16%;
     background-color: white;
-    width: 165vh;
+    width: 120vh;
     height: 2px;
   }
 .cont-card{
