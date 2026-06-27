@@ -5,13 +5,10 @@ import provincia from '../assets/provincia-icono.svg'
 import telefono from '../assets/telefono-icono.svg'
 import maps from '../assets/maps-icono.svg'
 import mail from '../assets/mail-icono.svg'
-import Home from './Home'
 import { Link } from 'wouter'
 
 export default function Locales() {
     return (
-        <>
-        <Home />
         <div className='cont-locales'>
             <div className="locales">
                 <button className='btn-cerrar-l'
@@ -80,6 +77,5 @@ export default function Locales() {
                 </div>
             </div>
         </div>
-        </>
     )
 }
