@@ -8,10 +8,9 @@
     z-index: 1000;
 }
 .locales {
-    color: white;
     width: 85%;
     max-height: 90vh;
-    background: #0F0F0F;
+    background: var(--fondo);
     border: 5px solid #1F1F1F;
     border-radius: 20px;
     padding: 5vh;
@@ -27,6 +26,8 @@
 }
 
 .locales h2 {
+    font-family: 'DM Serif Display';
+    color: var(--texto_titulo);
     text-align: center;
     margin-bottom: 40px;
     font-size: 40px;
@@ -40,16 +41,21 @@
 }
 
 .local-info {
+    font-family: 'Inter';
+    color: var(--texto_sec);
     flex: 1;
     float: left;
 }
 
 .local-info h3 {
+    font-family: 'DM Serif Display';
+    color: var(--texto_titulo);
     margin-bottom: 20px;
     font-size: 35px;
 }
 
 .local-info p {
+    color: var(--texto_sec);
     margin-bottom: 12px;
     margin: 20px;
     font-size: 20px;
@@ -75,6 +81,8 @@
 }
 
 .extra {
+    font-family: 'Inter';
+    color: var(--texto_sec);
     margin: 0 0.5vw;
     display: flex;
 }
