@@ -1,0 +1,71 @@
+.cont-fav{
+    position: absolute;
+    top: 9%;
+    background-color: #1F1F1F;
+    margin-left: 60%;
+    padding-bottom:5.55%;
+}
+
+.cont-fav h2{
+    font-size: 48px;
+    text-align: center;
+}
+
+.separador-fav{
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: white;
+    width: 35vw;
+    height: 0.2vw;
+}
+
+.tarjeta-fav{
+    margin: 1vw;
+    display: flex;
+    flex: 1;
+}
+
+.tarjeta-fav img{
+    margin-top: 2vw ;
+    width: 11vw;
+    height: 11vw;
+}
+
+.tarjeta-fav-info h3 {
+    padding: 1.2vw;
+    margin-top: 1vw;
+    font-size: 25px;
+}
+
+.tarjeta-fav-info p {
+    margin-bottom: 1vw;
+    margin: 1vw;
+    font-size: 15px;
+}
+
+.precio-fav{
+    float: right;
+    display: flex;
+}
+
+.btn-agr-fav {
+  background-color: #935633;
+  top: 5px;
+  right: 5px;
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin: 1vw;
+}
+
+.btn-agr-fav img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1.7vw;
+}
