@@ -1,0 +1,85 @@
+.favoritos{
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cont-fav{
+    width: 40%;
+    height: 100vh;
+    background-color: var(--fondo_card2);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.cont-fav h2{
+    font-family: 'DM Serif Display';
+    font-size: 48px;
+    text-align: center;
+}
+
+.separador-fav{
+    margin-top: 20px;
+    background-color: white;
+    width: 35vw;
+    height: 0.2vw;
+}
+
+.tarjeta-fav{
+    margin: 1vw;
+    display: flex;
+    flex: 1;
+}
+
+.tarjeta-fav img{
+    margin-top: 2vw ;
+    width: 11vw;
+    height: 11vw;
+}
+
+.tarjeta-fav-info h3 {
+    font-family: 'DM Serif Display';
+    color: var(--texto_titulo);
+    padding: 1vw;
+    margin-top: 1vw;
+    font-size: 25px;
+}
+
+.tarjeta-fav-info p {
+    font-family: 'Inter';
+    color: var(--texto_sec);
+    margin-bottom: 1vw;
+    margin: 1vw;
+    font-size: 15px;
+}
+
+.precio-fav{
+    float: right;
+    display: flex;
+}
+
+.btn-agr-fav {
+  background-color: var(--boton);
+  top: 5px;
+  right: 5px;
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin: 1vw;
+}
+
+.btn-agr-fav img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1.7vw;
+}
