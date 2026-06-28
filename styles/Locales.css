@@ -26,6 +26,7 @@
 }
 
 .locales h2 {
+    font-family: 'DM Serif Display';
     color: var(--texto_titulo);
     text-align: center;
     margin-bottom: 40px;
@@ -40,12 +41,14 @@
 }
 
 .local-info {
+    font-family: 'Inter';
     color: var(--texto_sec);
     flex: 1;
     float: left;
 }
 
 .local-info h3 {
+    font-family: 'DM Serif Display';
     color: var(--texto_titulo);
     margin-bottom: 20px;
     font-size: 35px;
@@ -78,6 +81,8 @@
 }
 
 .extra {
+    font-family: 'Inter';
+    color: var(--texto_sec);
     margin: 0 0.5vw;
     display: flex;
 }

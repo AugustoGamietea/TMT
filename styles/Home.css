@@ -5,6 +5,7 @@
 
 .categorias,
 .product-dest h2 {
+    font-family: 'DM Serif Display';
     margin: 3vh;
     font-size: 36px;
     text-align: center;
@@ -18,6 +19,7 @@
 }
 
 .btn-product {
+
     cursor: pointer;
     padding: 10px;
     border: 0;
@@ -45,6 +47,7 @@
     font-size: 25px;
 }
 .btn-cat h3{
+    font-family: 'Inter';
     color: var(--texto_sec);
     margin-left: 2vw;
 }
@@ -78,11 +81,12 @@
 }
 
 .texto-banner {
+    font-family: 'DM Serif Display';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--texto_titulo);
     text-align: center;
     font-size: 30px;
 }
