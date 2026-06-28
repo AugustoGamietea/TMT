@@ -1,6 +1,5 @@
 .Home {
-    background-color: #0F0F0F;
-    color: white;
+    background-color: var(--fondo);
     font-family: serif;
 }
 
@@ -22,15 +21,15 @@
     cursor: pointer;
     padding: 10px;
     border: 0;
-    color: white;
+    color: var(--texto_sec);
     border-radius: 5px;
-    background-color: #8A6248;
+    background-color: var(--boton);
     font-size: 24px;
     text-decoration: none;
 }
 
 .btn-product:hover {
-    background-color: #6F4327;
+    background-color: var(--hover_boton);
 }
 
 .cont-cat {
@@ -46,6 +45,7 @@
     font-size: 25px;
 }
 .btn-cat h3{
+    color: var(--texto_sec);
     margin-left: 2vw;
 }
 
@@ -55,7 +55,7 @@
     width: 10vw;
     align-items: center;
     justify-content: center;
-    background-color: #1F1F1F;
+    background-color: var(--fondo_card);
     border-radius: 50%;
     margin-left: 35px;
     padding: 1vw;
@@ -64,7 +64,7 @@
 }
 
 .cont-icono:hover {
-    background-color: #242424;
+    background-color: var(--fondo_card3);
     transform: translateY(-10px);
 }
 

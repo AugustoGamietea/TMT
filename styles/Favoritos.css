@@ -10,7 +10,7 @@
 .cont-fav{
     width: 40%;
     height: 100vh;
-    background-color: #1F1F1F;
+    background-color: var(--fondo_card2);
     overflow-y: auto;
     overflow-x: hidden;
     padding: 20px;
@@ -41,12 +41,14 @@
 }
 
 .tarjeta-fav-info h3 {
+    color: var(--texto_titulo);
     padding: 1.2vw;
     margin-top: 1vw;
     font-size: 25px;
 }
 
 .tarjeta-fav-info p {
+    color: var(--texto_sec);
     margin-bottom: 1vw;
     margin: 1vw;
     font-size: 15px;
@@ -58,7 +60,7 @@
 }
 
 .btn-agr-fav {
-  background-color: #935633;
+  background-color: var(--boton);
   top: 5px;
   right: 5px;
   width: 3vw;
