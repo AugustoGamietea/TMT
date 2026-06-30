@@ -90,3 +90,19 @@ footer > div:last-of-type p {
 footer > div:last-of-type a {
     float: right;
 }
+
+#LocalesCont {
+    /* list-style: none; */
+}
+
+#LocalesButt[open] {
+    
+}
+
+#LocalesButt[open] #LocalesCont > div {
+    display: flex !important;
+}
+
+#LocalesCont > div {
+    display: none !important;
+}

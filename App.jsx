@@ -6,7 +6,6 @@ import Detalle_producto from './componentes/Detalle_producto'
 import Carrito from './componentes/Carrito'
 import Catalogo from './componentes/Catalogo'
 import Favoritos from './componentes/Favoritos'
-import Locales from './componentes/Locales'
 import Sobre_nosotros from './componentes/Sobre_nosotros'
 import Terminos_y_condiciones from './componentes/Terminos_y_condiciones'
 import Preguntas_frecuentes from './componentes/Preguntas_frecuentes'
@@ -28,7 +27,6 @@ export default function App() {
                 <Route path='/Sobre_nosotros' component={Sobre_nosotros}/>
                 <Route path='/Terminos_y_condiciones' component={Terminos_y_condiciones}/>
                 <Route path='/Preguntas_frecuentes' component={Preguntas_frecuentes} />
-                <Route path='/Locales' component={Locales} />
             </Switch>
             <Footer />
         </Router>
