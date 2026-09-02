@@ -28,7 +28,7 @@ export default function Header() {
             </nav>
             <div id="iconos">
                 <div className="icono"><img src={whatsapp}/></div>
-                <Link href='/Favoritos' className='escritorio' className="icono"><img src={fav}/></Link>
+                <Link href='/Favoritos' className='escritorio icono'><img src={fav}/></Link>
                 <Link href='/Carrito' className="icono"><img src={carrito}/></Link>
             </div>
         </header>
