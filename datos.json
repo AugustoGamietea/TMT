@@ -1,0 +1,19 @@
+{
+    "productos": [
+        {
+            "nombre": "Silla",
+            "categoria": "Living",
+            "precio": 1000,
+            "colores": [
+                "3ad78fc", "7987c9", "fa2261"
+            ],
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "material": "Nogal",
+            "imagenes": []
+        }
+    ],
+
+    "categoria": [ "Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
+
+    "madera": [ "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ]
+}
