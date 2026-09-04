@@ -1,19 +1,82 @@
 {
     "productos": [
         {
+            "id": 0,
             "nombre": "Silla",
             "categoria": "Living",
             "precio": 1000,
             "colores": [
-                "3ad78fc", "7987c9", "fa2261"
+                "3ad78f", "7987c9", "fa2261"
             ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "material": "Nogal",
+            "imagenes": []
+        },
+        {
+            "id": 1,
+            "nombre": "Mesa",
+            "categoria": "Comedor",
+            "precio": 2000,
+            "colores": [
+                "a62d89", "14e902", "e2c423"
+            ],
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "material": "Pino",
+            "imagenes": []
+        },
+        {
+            "id": 2,
+            "nombre": "Cama",
+            "categoria": "Dormitorio",
+            "precio": 4500,
+            "colores": [
+                "0438a9", "58b757", "109ab5"
+            ],
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "material": "Cerezo",
             "imagenes": []
         }
     ],
 
     "categoria": [ "Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
 
-    "madera": [ "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ]
+    "madera": [ "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ],
+
+    "preguntas": [
+        {
+            "titulo" : "Pregunta",
+            "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+            "titulo" : "Pregunta",
+            "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+            "titulo" : "Pregunta",
+            "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+            "titulo" : "Pregunta",
+            "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+            "titulo" : "Pregunta",
+            "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+            "titulo" : "Pregunta",
+            "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        }
+    ],
+
+    "locales": [
+        {
+            "ubicacion": "",
+            "nombre": "Local 1"
+        },
+        {
+            "ubicacion": "",
+            "nombre": "Local 2"
+        }
+    ]
 }
