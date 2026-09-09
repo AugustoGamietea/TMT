@@ -1,44 +1,247 @@
 {
     "productos": [
-        {
-            "id": 0,
-            "nombre": "Silla",
-            "categoria": "Living",
-            "precio": 1000,
-            "colores": [
-                "3ad78f", "7987c9", "fa2261"
-            ],
-            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "material": "Nogal",
-            "imagenes": []
-        },
-        {
-            "id": 1,
-            "nombre": "Mesa",
-            "categoria": "Comedor",
-            "precio": 2000,
-            "colores": [
-                "a62d89", "14e902", "e2c423"
-            ],
-            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "material": "Pino",
-            "imagenes": []
-        },
-        {
-            "id": 2,
-            "nombre": "Cama",
-            "categoria": "Dormitorio",
-            "precio": 4500,
-            "colores": [
-                "0438a9", "58b757", "109ab5"
-            ],
-            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "material": "Cerezo",
-            "imagenes": []
-        }
-    ],
-
-    "categoria": [ "Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
+    {
+        "id": 0,
+        "nombre": "Silla",
+        "categoria": "Living",
+        "precio": 1000,
+        "colores": [
+            "3ad78f", "7987c9", "fa2261"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "material": "Nogal",
+        "imagenes": []
+    },
+    {
+        "id": 1,
+        "nombre": "Mesa",
+        "categoria": "Comedor",
+        "precio": 2000,
+        "colores": [
+            "a62d89", "14e902", "e2c423"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "material": "Pino",
+        "imagenes": []
+    },
+    {
+        "id": 2,
+        "nombre": "Cama",
+        "categoria": "Dormitorio",
+        "precio": 4500,
+        "colores": [
+            "0438a9", "58b757", "109ab5"
+        ],
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "material": "Cerezo",
+        "imagenes": []
+    },
+    {
+        "id": 3,
+        "nombre": "Sillón",
+        "categoria": "Living",
+        "precio": 6500,
+        "colores": [
+            "8b4513", "d2691e", "f5deb3"
+        ],
+        "descripcion": "Sillón amplio y cómodo, ideal para complementar cualquier espacio del living.",
+        "material": "Roble",
+        "imagenes": []
+    },
+    {
+        "id": 4,
+        "nombre": "Sofá",
+        "categoria": "Living",
+        "precio": 12000,
+        "colores": [
+            "696969", "a9a9a9", "d3d3d3"
+        ],
+        "descripcion": "Sofá moderno de gran tamaño, diseñado para brindar comodidad y estilo.",
+        "material": "Cedro",
+        "imagenes": []
+    },
+    {
+        "id": 5,
+        "nombre": "Mesa ratona",
+        "categoria": "Living",
+        "precio": 3500,
+        "colores": [
+            "deb887", "cd853f", "8b4513"
+        ],
+        "descripcion": "Mesa ratona compacta para colocar frente al sofá y aprovechar mejor el espacio.",
+        "material": "Fresno",
+        "imagenes": []
+    },
+    {
+        "id": 6,
+        "nombre": "Escritorio",
+        "categoria": "Oficina",
+        "precio": 8000,
+        "colores": [
+            "708090", "778899", "b0c4de"
+        ],
+        "descripcion": "Escritorio amplio y práctico para estudiar, trabajar o utilizar una computadora.",
+        "material": "Eucalipto",
+        "imagenes": []
+    },
+    {
+        "id": 7,
+        "nombre": "Silla de oficina",
+        "categoria": "Oficina",
+        "precio": 5500,
+        "colores": [
+            "000000", "333333", "666666"
+        ],
+        "descripcion": "Silla ergonómica para oficina con diseño cómodo y moderno.",
+        "material": "Abedul",
+        "imagenes": []
+    },
+    {
+        "id": 8,
+        "nombre": "Biblioteca",
+        "categoria": "Oficina",
+        "precio": 9000,
+        "colores": [
+            "8b4513", "a0522d", "cd853f"
+        ],
+        "descripcion": "Biblioteca de varios estantes para organizar libros, documentos y objetos.",
+        "material": "Nogal",
+        "imagenes": []
+    },
+    {
+        "id": 9,
+        "nombre": "Mesa de comedor",
+        "categoria": "Comedor",
+        "precio": 11000,
+        "colores": [
+            "f4a460", "d2b48c", "bc8f8f"
+        ],
+        "descripcion": "Mesa de comedor amplia, ideal para reuniones familiares y comidas diarias.",
+        "material": "Roble",
+        "imagenes": []
+    },
+    {
+        "id": 10,
+        "nombre": "Banco",
+        "categoria": "Comedor",
+        "precio": 3000,
+        "colores": [
+            "a0522d", "8b4513", "deb887"
+        ],
+        "descripcion": "Banco de madera resistente que combina perfectamente con mesas de comedor.",
+        "material": "Pino",
+        "imagenes": []
+    },
+    {
+        "id": 11,
+        "nombre": "Mesa auxiliar",
+        "categoria": "Cocina",
+        "precio": 4000,
+        "colores": [
+            "f5f5dc", "d2b48c", "a0522d"
+        ],
+        "descripcion": "Mesa auxiliar para cocina, práctica para almacenar y preparar diferentes elementos.",
+        "material": "Algarrobo",
+        "imagenes": []
+    },
+    {
+        "id": 12,
+        "nombre": "Alacena",
+        "categoria": "Cocina",
+        "precio": 9500,
+        "colores": [
+            "ffffff", "f5f5dc", "d3d3d3"
+        ],
+        "descripcion": "Alacena de madera con amplios espacios para guardar utensilios y productos.",
+        "material": "Cedro",
+        "imagenes": []
+    },
+    {
+        "id": 13,
+        "nombre": "Mesa de luz",
+        "categoria": "Dormitorio",
+        "precio": 2800,
+        "colores": [
+            "d2b48c", "bc8f8f", "8b4513"
+        ],
+        "descripcion": "Mesa de luz compacta para colocar junto a la cama y guardar objetos personales.",
+        "material": "Cerezo",
+        "imagenes": []
+    },
+    {
+        "id": 14,
+        "nombre": "Ropero",
+        "categoria": "Dormitorio",
+        "precio": 15000,
+        "colores": [
+            "8b4513", "a0522d", "deb887"
+        ],
+        "descripcion": "Ropero amplio con gran capacidad de almacenamiento para ropa y accesorios.",
+        "material": "Nogal",
+        "imagenes": []
+    },
+    {
+        "id": 15,
+        "nombre": "Cómoda",
+        "categoria": "Dormitorio",
+        "precio": 8500,
+        "colores": [
+            "deb887", "d2b48c", "cd853f"
+        ],
+        "descripcion": "Cómoda con varios cajones para organizar ropa y objetos personales.",
+        "material": "Eucalipto",
+        "imagenes": []
+    },
+    {
+        "id": 16,
+        "nombre": "Cajonera",
+        "categoria": "Cajones",
+        "precio": 6000,
+        "colores": [
+            "8b4513", "cd853f", "d2691e"
+        ],
+        "descripcion": "Cajonera práctica con varios compartimentos para mantener todo organizado.",
+        "material": "Fresno",
+        "imagenes": []
+    },
+    {
+        "id": 17,
+        "nombre": "Mueble organizador",
+        "categoria": "Cajones",
+        "precio": 7200,
+        "colores": [
+            "a0522d", "deb887", "d2b48c"
+        ],
+        "descripcion": "Mueble organizador con múltiples cajones para aprovechar el espacio disponible.",
+        "material": "Abedul",
+        "imagenes": []
+    },
+    {
+        "id": 18,
+        "nombre": "Vitrina",
+        "categoria": "Comedor",
+        "precio": 10500,
+        "colores": [
+            "8b4513", "deb887", "f4a460"
+        ],
+        "descripcion": "Vitrina de madera para exhibir vajilla, objetos decorativos y otros elementos.",
+        "material": "Algarrobo",
+        "imagenes": []
+    },
+    {
+        "id": 19,
+        "nombre": "Silla de comedor",
+        "categoria": "Comedor",
+        "precio": 3200,
+        "colores": [
+            "a0522d", "d2691e", "f4a460"
+        ],
+        "descripcion": "Silla resistente y cómoda para acompañar mesas de comedor de diferentes estilos.",
+        "material": "Fresno",
+        "imagenes": []
+    }
+],
+    "categoria": [ "Todas" ,"Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
 
     "madera": [ "Todas", "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ],
 
