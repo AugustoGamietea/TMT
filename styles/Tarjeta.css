@@ -4,7 +4,7 @@ a.card {
 
 .card {
   width: 200px;
-  height: 270px;
+  height: 275px;
   background-color: #1f1f1f;
   border-radius: 5px;
   padding: 10px;
@@ -43,6 +43,8 @@ a.card {
   font-family: "Arvo", serif;
   font-weight: 400;
   font-style: normal;
+  max-height: 40px;
+  overflow: hidden;
 }
 
 .card-fav {
@@ -62,5 +64,5 @@ a.card {
 
 .card-fav img {
   width: 17px;
-  height: 17px;
+  height: 16px;
 }

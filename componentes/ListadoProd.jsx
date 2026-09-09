@@ -1,18 +1,35 @@
-import Tarjeta from "./Tarjeta"
-import datos from "../datos.json"
+import Tarjeta from "./Tarjeta.jsx";
+import datos from "../datos.json";
 import { useLocation } from "wouter";
 
-export default function ListadoProd () {
-    const [location, ] = useLocation();
+export default function ListadoProd({ madera }) {
 
-    const filtro = location.split("/");
-    const filtroSelec = filtro[filtro.length - 1];
-    
-    return (
-        <div className="Listado">
-            {datos.productos.filter(p => {if (filtroSelec == p.categoria || filtroSelec == "Catalogo") {return true}}).map((producto) => (
-                <Tarjeta key={producto.categoria} producto={producto}></Tarjeta>
-            ))}
-        </div>
-    )
+  const [location] = useLocation();
+
+  const filtro = location.split("/");
+  const filtroSelec = filtro[filtro.length - 1];
+
+  let productosFiltrados;
+
+  if (madera === "Todas" || madera == "" ) {
+    productosFiltrados = datos.productos.filter(p =>
+      filtroSelec === p.categoria || filtroSelec === "Catalogo"
+    );
+  } else {
+    productosFiltrados = datos.productos.filter(p =>
+      (filtroSelec === p.categoria || filtroSelec === "Catalogo") &&
+      madera === p.material 
+    );
+  }
+
+  return (
+    <div className="Listado">
+      {productosFiltrados.map((producto) => (
+        <Tarjeta
+          key={producto.id}
+          productos={producto}
+        />
+      ))}
+    </div>
+  );
 }

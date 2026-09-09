@@ -7,6 +7,7 @@ import Carrito from "../assets/Carrito2.svg"
 import Flecha from "../assets/flecha.svg"
 import "../styles/DetalleProducto.css"
 import Tarjeta from '../componentes/Tarjeta'
+import datos from "../datos.json"
 
 export default function Detalle_producto() {
     return (
@@ -84,12 +85,9 @@ export default function Detalle_producto() {
                 </div>
 
                 <div className="grid-tarjetas">
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
+                    {datos.productos.map((producto) => (
+                        <Tarjeta key={producto.id} productos={producto} />
+                    ))}
                 </div>
             </section>
         </div>
