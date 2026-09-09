@@ -10,7 +10,8 @@
             ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "material": "Nogal",
-            "imagenes": []
+            "imagenes": [],
+            "medidas": ""
         },
         {
             "id": 1,
@@ -22,7 +23,8 @@
             ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "material": "Pino",
-            "imagenes": []
+            "imagenes": [],
+            "medidas": ""
         },
         {
             "id": 2,
@@ -34,7 +36,8 @@
             ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "material": "Cerezo",
-            "imagenes": []
+            "imagenes": [],
+            "medidas": ""
         }
     ],
 
