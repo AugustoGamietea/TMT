@@ -241,8 +241,7 @@
         "imagenes": []
     }
 ],
-
-    "categoria": ["Todas" ,"Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
+    "categoria": [ "Todas" ,"Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
 
     "madera": [ "Todas", "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ],
 
