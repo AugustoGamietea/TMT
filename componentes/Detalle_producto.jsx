@@ -9,8 +9,14 @@ import "../styles/DetalleProducto.css"
 import Tarjeta from '../componentes/Tarjeta'
 import datos from '../datos.json'
 import { useState } from "react"
+import { Link, useLocation } from "wouter"
+import { useCarrito } from "../context/CarritoContext"
 
 export default function Detalle_producto(/* {producto} */) {
+    const { carrito, agregar } = useCarrito();
+
+    const [, setLocation] = useLocation('')
+
     const producto = datos.productos[0];
     let colorSelec = 0;
     function setColor(col, elem) {
@@ -54,10 +60,10 @@ export default function Detalle_producto(/* {producto} */) {
                     </div>
 
                     <div className="img-secundarias">
-                        <img src={Mueble_Sec1} onClick={e => cambiarMueble(e.target) } />
-                        <img src={Mueble_Sec2} onClick={e => cambiarMueble(e.target) } />
-                        <img src={Mueble_Sec3} onClick={e => cambiarMueble(e.target) } />
-                        <img src={Mueble_Sec4} onClick={e => cambiarMueble(e.target) } />
+                        <img src={Mueble_Sec1} onClick={e => cambiarMueble(e.target)} />
+                        <img src={Mueble_Sec2} onClick={e => cambiarMueble(e.target)} />
+                        <img src={Mueble_Sec3} onClick={e => cambiarMueble(e.target)} />
+                        <img src={Mueble_Sec4} onClick={e => cambiarMueble(e.target)} />
                     </div>
                 </div>
 
@@ -78,9 +84,9 @@ export default function Detalle_producto(/* {producto} */) {
                     <div className="info-item">
                         <h2>Color</h2>
                         <div className="colores">
-                            <span className="color" style={{backgroundColor: `#${producto.colores[0]}`}} onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[0]}`} onMouseLeave={e => {if (colorSelec != 0) {e.target.style.backgroundColor = `#000`}}} onClick={e => setColor(0, e.target)} ></span>
-                            <span className="color" onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[1]}`} onMouseLeave={e => {if (colorSelec != 1) {e.target.style.backgroundColor = `#000`}}} onClick={e => setColor(1, e.target)} ></span>
-                            <span className="color" onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[2]}`} onMouseLeave={e => {if (colorSelec != 2) {e.target.style.backgroundColor = `#000`}}} onClick={e => setColor(2, e.target)} ></span>
+                            <span className="color" style={{ backgroundColor: `#${producto.colores[0]}` }} onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[0]}`} onMouseLeave={e => { if (colorSelec != 0) { e.target.style.backgroundColor = `#000` } }} onClick={e => setColor(0, e.target)} ></span>
+                            <span className="color" onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[1]}`} onMouseLeave={e => { if (colorSelec != 1) { e.target.style.backgroundColor = `#000` } }} onClick={e => setColor(1, e.target)} ></span>
+                            <span className="color" onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[2]}`} onMouseLeave={e => { if (colorSelec != 2) { e.target.style.backgroundColor = `#000` } }} onClick={e => setColor(2, e.target)} ></span>
                         </div>
                     </div>
 
@@ -102,11 +108,20 @@ export default function Detalle_producto(/* {producto} */) {
 
                     <div className="botones-compra">
                         <div className="cantidad">
-                            <button onClick={() => {if (cant > 1) {setCant(prev => prev - 1)}}}>-</button>
+                            <button onClick={() => { if (cant > 1) { setCant(prev => prev - 1) } }}>-</button>
                             <span>{cant}</span>
-                            <button onClick={() => {if (cant < 99) {setCant(prev => prev + 1)}}}>+</button>
+                            <button onClick={() => { if (cant < 99) { setCant(prev => prev + 1) } }}>+</button>
                         </div>
-                        <button className="btn-carrito">
+                        <button className="btn-carrito" onClick={() => {
+                            if (carrito.filter(p => { return ((p.id == producto.id) && (p.color == producto.colores[colorSelec])) }).length > 0) {
+                                alert('El producto ya esta en el carrito');
+                                return
+                            } else {
+                                alert('El producto ha sido añadido al carrito');
+                                agregar({ ...producto, cantidad: cant, color: producto.colores[colorSelec] });
+                                setLocation('/Carrito');
+                            }
+                        }}>
                             <img src={Carrito} alt="" />
                             Agregar carrito
                         </button>
