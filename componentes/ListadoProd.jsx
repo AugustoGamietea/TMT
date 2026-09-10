@@ -23,16 +23,12 @@ export default function ListadoProd({ madera }) {
 
   return (
     <div className="Listado">
-
-
       {productosFiltrados.map((producto) => (
         <Tarjeta
           key={producto.id}
           productos={producto}
         />
       ))}
-
-
     </div>
   );
 }

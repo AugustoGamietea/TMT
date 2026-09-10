@@ -126,3 +126,35 @@ header .icono {
     display: flex;
     justify-content: center;
 }
+
+.escritorio {
+    position: relative;
+}
+
+.desplegable {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 550px;
+    background-color: rgb(13, 13, 13);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.desplegable ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.desplegable li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.desplegable li:hover {
+    background-color: #505050;
+}
+.parrafo_desplegable{
+    color: rgb(212, 209, 209);
+}
