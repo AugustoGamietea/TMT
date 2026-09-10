@@ -7,68 +7,107 @@ import Carrito from "../assets/Carrito2.svg"
 import Flecha from "../assets/flecha.svg"
 import "../styles/DetalleProducto.css"
 import Tarjeta from '../componentes/Tarjeta'
-import datos from "../datos.json"
+import datos from '../datos.json'
+import { useState } from "react"
+import { useRoute } from "wouter"
 
 export default function Detalle_producto() {
+    const [,id] = useRoute("/Detalle_producto/:producto_id");
+    const producto = datos.productos[id.producto_id];
+    
+    let colorSelec = 0;
+    function setColor(col, elem) {
+        colorSelec = col;
+        (Array.from(elem.parentElement.children)).forEach(elemChild => {
+            if (elemChild != elem) {
+                elemChild.style.backgroundColor = '#000'
+            }
+        })
+    }
+
+    var mostrarDescFlag = true;
+    function mostrar(elem) {
+        const desc = elem.parentElement.lastChild;
+        if (mostrarDescFlag) {
+            mostrarDescFlag = false;
+            desc.style.display = "none";
+            elem.lastChild.style.transform = "rotateZ(180deg)"
+        } else {
+            mostrarDescFlag = true;
+            desc.style.display = "block";
+            elem.lastChild.style.transform = ""
+        }
+    }
+
+    const [Mueble_selec, setMueble] = useState(Mueble);
+    const [cant, setCant] = useState(1);
+
+    function cambiarMueble(elem) {
+        let temp = elem.src;
+        elem.src = Mueble_selec;
+        setMueble(temp)
+    }
+
     return (
         <div className="dp-container">
             <section className="detalle-producto">
                 <div className="galeria">
                     <div className="img-principal">
-                        <img src={Mueble} alt="Mueble" />
+                        <img src={Mueble_selec} alt="Mueble" />
                     </div>
 
                     <div className="img-secundarias">
-                        <img src={Mueble_Sec1} alt="Mueble secundaria 1" />
-                        <img src={Mueble_Sec2} alt="Mueble secundaria 2" />
-                        <img src={Mueble_Sec3} alt="Mueble secundaria 3" />
-                        <img src={Mueble_Sec4} alt="Mueble secundaria 4" />
+                        <img src={Mueble_Sec1} onClick={e => cambiarMueble(e.target) } />
+                        <img src={Mueble_Sec2} onClick={e => cambiarMueble(e.target) } />
+                        <img src={Mueble_Sec3} onClick={e => cambiarMueble(e.target) } />
+                        <img src={Mueble_Sec4} onClick={e => cambiarMueble(e.target) } />
                     </div>
                 </div>
 
                 <div className="info-producto">
                     <div className="info-item">
-                        <h2>Nombre producto</h2>
-                        <h3>$ Precio</h3>
+                        <h2>{producto.nombre}</h2>
+                        <h3>${producto.precio}</h3>
                     </div>
 
                     <div className="descripcion">
-                        <div className="info-descripcion">
+                        <div className="info-descripcion" onClick={e => mostrar(e.currentTarget)}>
                             <h2>Descripción</h2>
                             <img src={Flecha} alt="flecha" />
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p>{producto.descripcion}</p>
                     </div>
 
                     <div className="info-item">
                         <h2>Color</h2>
                         <div className="colores">
-                            <span className="color-activo"></span>
-                            <span className="color"></span>
-                            <span className="color"></span>
+                            <span className="color" style={{backgroundColor: `#${producto.colores[0]}`}} onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[0]}`} onMouseLeave={e => {if (colorSelec != 0) {e.target.style.backgroundColor = `#000`}}} onClick={e => setColor(0, e.target)} ></span>
+                            <span className="color" onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[1]}`} onMouseLeave={e => {if (colorSelec != 1) {e.target.style.backgroundColor = `#000`}}} onClick={e => setColor(1, e.target)} ></span>
+                            <span className="color" onMouseOver={e => e.target.style.backgroundColor = `#${producto.colores[2]}`} onMouseLeave={e => {if (colorSelec != 2) {e.target.style.backgroundColor = `#000`}}} onClick={e => setColor(2, e.target)} ></span>
                         </div>
                     </div>
 
                     <div className="info-item">
                         <h2>Medidas</h2>
-                        <img src={Flecha} alt="flecha" />
+                        <p>{producto.medidas}</p>
                     </div>
 
-                    <div className="info-item">
+                    {/* <div className="info-item">
                         <h2>Material</h2>
                         <img src={Flecha} alt="flecha" />
-                    </div>
+                    </div> */}
 
                     <div className="info-item">
                         <h2>Tipo de madera</h2>
-                        <img src={Flecha} alt="flecha" />
+                        {/* <img src={Flecha} alt="flecha" /> */}
+                        <p>{producto.material}</p>
                     </div>
 
                     <div className="botones-compra">
                         <div className="cantidad">
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
+                            <button onClick={() => {if (cant > 1) {setCant(prev => prev - 1)}}}>-</button>
+                            <span>{cant}</span>
+                            <button onClick={() => {if (cant < 99) {setCant(prev => prev + 1)}}}>+</button>
                         </div>
                         <button className="btn-carrito">
                             <img src={Carrito} alt="" />
@@ -86,7 +125,7 @@ export default function Detalle_producto() {
 
                 <div className="grid-tarjetas">
                     {datos.productos.map((producto) => (
-                        <Tarjeta key={producto.id} productos={producto} />
+                        <Tarjeta key={producto.id} producto={producto} />
                     ))}
                 </div>
             </section>

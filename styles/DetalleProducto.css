@@ -82,19 +82,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .info-descripcion img {
     cursor: pointer;
-    transform: rotateZ(180deg);
     width: 20px;
+    transition: 0.5s;
 }
 
 .descripcion p {
     font-size: 15px;
     color: #B3B3B3;
     font-family: "Inter", sans-serif;
+    margin-top: 10px;
 }
 
 .colores {
@@ -102,21 +102,13 @@
     gap: 12px;
 }
 
-.color,
-.color-activo {
+.color {
     width: 22px;
     height: 22px;
     border-radius: 50%;
     border: 1px solid white;
     cursor: pointer;
-}
-
-.color-activo {
-    background-color: #7C4E2E;
-}
-
-.color {
-    background: transparent;
+    background-color: transparent;
 }
 
 .botones-compra {

@@ -1,5 +1,5 @@
 import '../styles/Header.css'
-import { Link } from 'wouter'
+import { Link, useLocation } from 'wouter'
 import logo from '../assets/logo.svg'
 import flecha from '../assets/flecha.svg'
 import lupa from '../assets/lupa.svg'
@@ -13,6 +13,8 @@ import datos from "../datos.json";
 export default function Header() {
 
     const [inputbusqueda, setinputbusqueda] = useState("");
+
+    const [, setLocation] = useLocation(); //setLocation(./Detalle_producto/:producto_id)
     let FiltroBusqueda = [];
 
     if (inputbusqueda !== "") {
@@ -24,6 +26,8 @@ export default function Header() {
         });
         console.log(FiltroBusqueda)
     }
+
+    const [mostrarSugerencias, setMostrarSugerencias] = useState(true);
 
     return (
         <header>
@@ -45,15 +49,27 @@ export default function Header() {
                 <div className='desplegable'>
                     <ul>
                         {FiltroBusqueda.map((producto) => (
-                            <li key={producto.id}>
-                                <p className='parrafo_desplegable'>{producto.nombre} || categoria:({producto.categoria})</p>
+                            <li className='Sugerencias' key={producto.id}>
+                                <p onClick={() => { setLocation(`/Detalle_producto/${producto.id}`), setMostrarSugerencias(false), setinputbusqueda("") }} className='parrafo_desplegable'>{producto.nombre} || categoria:({producto.categoria})</p>
                             </li>
                         ))}
                     </ul>
                 </div>
             </nav>
             <div id="iconos">
-                <div className="icono"><img src={whatsapp} /></div>
+                <div
+                    onClick={() => {
+                        const mensaje = `Hola, estoy interesado en un producto". ¿Podrían darme más información sobre el precio y disponibilidad?`;
+
+                        window.open(
+                            `https://wa.me/542901411740?text=${encodeURIComponent(mensaje)}`,
+                            "_blank"
+                        );
+                    }}
+                    className="icono"
+                >
+                    <img src={whatsapp} alt="WhatsApp" />
+                </div>
                 <Link href='/Favoritos' className='escritorio icono'><img src={fav} /></Link>
                 <Link href='/Carrito' className="icono"><img src={carrito} /></Link>
             </div>

@@ -26,7 +26,7 @@ export default function ListadoProd({ madera }) {
       {productosFiltrados.map((producto) => (
         <Tarjeta
           key={producto.id}
-          productos={producto}
+          producto={producto}
         />
       ))}
     </div>

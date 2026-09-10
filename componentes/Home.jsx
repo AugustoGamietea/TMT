@@ -81,7 +81,7 @@ export default function Home(){
                 <h2>Productos destacados</h2>
                 <div className="cont-card">
                     {datos.productos.map((producto) => (
-                        <Tarjeta key={producto.id} productos={producto} />
+                        <Tarjeta key={producto.id} producto={producto} />
                     ))}
                 </div>
             </div>
