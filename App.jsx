@@ -10,6 +10,7 @@ import Locales from './componentes/Locales'
 import Sobre_nosotros from './componentes/Sobre_nosotros'
 import Terminos_y_condiciones from './componentes/Terminos_y_condiciones'
 import Preguntas_frecuentes from './componentes/Preguntas_frecuentes'
+import datos from "./datos.json"
 
 export default function App() {
     return (
