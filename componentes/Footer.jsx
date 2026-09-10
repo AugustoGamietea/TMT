@@ -41,8 +41,18 @@ export default function Footer() {
                                     "_blank"
                                 );
                             }} className="icono"> <img src={whatsapp} />+54 9 11 4455-6677</a>
-                        <a href=""><img src={instagram} />Instagram</a>
-                        <a href=""><img src={facebook} />Facebook</a>
+                        <a href="" onClick={() => {
+                            window.open(
+                                "https://www.instagram.com/gonzalo.g.o_07/",
+                                "_blank"
+                            );
+                        }}><img src={instagram} />Instagram</a>
+                        <a href="" onClick={() => {
+                            window.open(
+                                "https://www.facebook.com",
+                                "_blank"
+                            );
+                        }}><img src={facebook} />Facebook</a>
                     </div>
                 </div>
             </div>
