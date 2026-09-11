@@ -10,7 +10,8 @@
             ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "material": "Nogal",
-            "imagenes": []
+            "imagenes": [],
+            "medidas": ""
         },
         {
             "id": 1,
@@ -22,7 +23,8 @@
             ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "material": "Pino",
-            "imagenes": []
+            "imagenes": [],
+            "medidas": ""
         },
         {
             "id": 2,
@@ -34,13 +36,14 @@
             ],
             "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "material": "Cerezo",
-            "imagenes": []
+            "imagenes": [],
+            "medidas": ""
         }
     ],
 
-    "categoria": [ "Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
+    "categoria": [ "Todas","Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
 
-    "madera": [ "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ],
+    "madera": [ "Todas", "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ],
 
     "preguntas": [
         {

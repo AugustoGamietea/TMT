@@ -21,7 +21,7 @@ export default function App() {
             </div>
             <Switch>
                 <Route path='/' component={Home}/>
-                <Route path='/Detalle_producto' component={Detalle_producto}/>
+                <Route path='/Detalle_producto/:producto_id' component={Detalle_producto}/>
                 <Route path='/Carrito' component={Carrito}/>
                 <Route path='/Catalogo/:cat' component={Catalogo}/>
                 <Route path='/Catalogo' component={Catalogo}/>

@@ -8,6 +8,7 @@ import cocina from '../assets/cocina-icono.svg'
 import oficina from '../assets/oficina-icono.svg'
 import Tarjeta from "./Tarjeta";
 import { Link } from 'wouter'
+import datos from "../datos.json"
 
 export default function Home(){
     return(
@@ -79,16 +80,9 @@ export default function Home(){
             <div className="product-dest">
                 <h2>Productos destacados</h2>
                 <div className="cont-card">
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
+                    {datos.productos.map((producto) => (
+                        <Tarjeta key={producto.id} producto={producto} />
+                    ))}
                 </div>
             </div>
         </div>
