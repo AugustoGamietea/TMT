@@ -9,15 +9,16 @@ import "../styles/DetalleProducto.css"
 import Tarjeta from '../componentes/Tarjeta'
 import datos from '../datos.json'
 import { useState } from "react"
-import { Link, useLocation } from "wouter"
+import { useLocation } from "wouter"
 import { useCarrito } from "../context/CarritoContext"
 
-export default function Detalle_producto(/* {producto} */) {
+export default function Detalle_producto() {
     const { carrito, agregar } = useCarrito();
+    
+    const [location, setLocation] = useLocation('')
+    
+    const producto = datos.productos[location.split('/')[location.split('/').length - 1]];
 
-    const [, setLocation] = useLocation('')
-
-    const producto = datos.productos[0];
     let colorSelec = 0;
     function setColor(col, elem) {
         colorSelec = col;
@@ -137,7 +138,7 @@ export default function Detalle_producto(/* {producto} */) {
 
                 <div className="grid-tarjetas">
                     {datos.productos.map((producto) => (
-                        <Tarjeta key={producto.id} productos={producto} />
+                        <Tarjeta key={producto.id} producto={producto} />
                     ))}
                 </div>
             </section>

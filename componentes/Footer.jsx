@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer>
             <div id='links'>
-                <img id='logo' src={logo}/>
+                <img id='logo' src={logo} />
                 <div>
                     <div id='paginas'>
                         <p>Páginas</p>
@@ -32,9 +32,27 @@ export default function Footer() {
                     </div>
                     <div id='contactos'>
                         <p>Contactos</p>
-                        <a href=""><img src={whatsapp}/>+54 9 11 4455-6677</a>
-                        <a href=""><img src={instagram}/>Instagram</a>
-                        <a href=""><img src={facebook}/>Facebook</a>
+                        <a
+                            onClick={() => {
+                                const mensaje = `Hola, estoy interesado en hablar sobre un producto. ¿Podrían darme más información sobre el precio y disponibilidad?`;
+
+                                window.open(
+                                    `https://wa.me/542901411740?text=${encodeURIComponent(mensaje)}`,
+                                    "_blank"
+                                );
+                            }} className="icono"> <img src={whatsapp} />+54 9 11 4455-6677</a>
+                        <a href="" onClick={() => {
+                            window.open(
+                                "https://www.instagram.com/gonzalo.g.o_07/",
+                                "_blank"
+                            );
+                        }}><img src={instagram} />Instagram</a>
+                        <a href="" onClick={() => {
+                            window.open(
+                                "https://www.facebook.com",
+                                "_blank"
+                            );
+                        }}><img src={facebook} />Facebook</a>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export default function Tarjeta({ producto }) {
 
 
     return (
-        <Link href="/Detalle_producto" className="card">
+        <Link href={`/Detalle_producto/${producto.id}`} className="card">
             <button className="card-fav" type="button">
                 <img src={heart} alt="Fav" onClick={e => { favorito(e) }} />
             </button>
