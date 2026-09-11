@@ -3,7 +3,6 @@ import { createContext, useContext, useReducer } from "react";
 const CarritoContext = createContext();
 
 function carritoReducer(state, action) {
-    console.log(action);
     switch (action.method) {
         case "POST":
             return [...state, action.body];

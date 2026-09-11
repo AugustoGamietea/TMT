@@ -43,7 +43,7 @@
 
     "categoria": [ "Cocina", "Comedor", "Living", "Oficina", "Dormitorio", "Cajones" ],
 
-    "madera": [ "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ],
+    "madera": [ "Todas", "Pino", "Abedul", "Roble", "Cedro", "Eucalipto", "Nogal", "Cerezo", "Algarrobo", "Fresno" ],
 
     "preguntas": [
         {

@@ -15,16 +15,13 @@ export default function App() {
     return (
         <Router >
             <Header />
-            <div className="escritorio f">
-                <Favoritos />
-            </div>
+            <Favoritos />
             <Switch>
                 <Route path='/' component={Home}/>
                 <Route path='/Detalle_producto' component={Detalle_producto}/>
                 <Route path='/Carrito' component={Carrito}/>
                 <Route path='/Catalogo/:cat' component={Catalogo}/>
                 <Route path='/Catalogo' component={Catalogo}/>
-                <Route path='/Favoritos' component={Favoritos}/>
                 <Route path='/Sobre_nosotros' component={Sobre_nosotros}/>
                 <Route path='/Terminos_y_condiciones' component={Terminos_y_condiciones}/>
                 <Route path='/Preguntas_frecuentes' component={Preguntas_frecuentes} />

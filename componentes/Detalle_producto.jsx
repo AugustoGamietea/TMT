@@ -136,12 +136,9 @@ export default function Detalle_producto(/* {producto} */) {
                 </div>
 
                 <div className="grid-tarjetas">
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
-                    <Tarjeta />
+                    {datos.productos.map((producto) => (
+                        <Tarjeta key={producto.id} productos={producto} />
+                    ))}
                 </div>
             </section>
         </div>
