@@ -10,22 +10,18 @@ import Locales from './componentes/Locales'
 import Sobre_nosotros from './componentes/Sobre_nosotros'
 import Terminos_y_condiciones from './componentes/Terminos_y_condiciones'
 import Preguntas_frecuentes from './componentes/Preguntas_frecuentes'
-import datos from "./datos.json"
 
 export default function App() {
     return (
         <Router >
             <Header />
-            <div className="escritorio f">
-                <Favoritos />
-            </div>
+            <Favoritos />
             <Switch>
                 <Route path='/' component={Home}/>
                 <Route path='/Detalle_producto/:producto_id' component={Detalle_producto}/>
                 <Route path='/Carrito' component={Carrito}/>
                 <Route path='/Catalogo/:cat' component={Catalogo}/>
                 <Route path='/Catalogo' component={Catalogo}/>
-                <Route path='/Favoritos' component={Favoritos}/>
                 <Route path='/Sobre_nosotros' component={Sobre_nosotros}/>
                 <Route path='/Terminos_y_condiciones' component={Terminos_y_condiciones}/>
                 <Route path='/Preguntas_frecuentes' component={Preguntas_frecuentes} />

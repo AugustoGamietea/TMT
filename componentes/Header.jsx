@@ -9,6 +9,7 @@ import carrito from '../assets/carrito.svg'
 import { useState } from 'react'
 import datos from "../datos.json";
 
+import { useFavoritos } from '../context/FavoritosContext'
 
 export default function Header() {
 
@@ -29,6 +30,8 @@ export default function Header() {
 
     const [mostrarSugerencias, setMostrarSugerencias] = useState(true);
 
+    const { mostrar } = useFavoritos();
+    
     return (
         <header>
             <div id="titulo">
@@ -70,7 +73,7 @@ export default function Header() {
                 >
                     <img src={whatsapp} alt="WhatsApp" />
                 </div>
-                <Link href='/Favoritos' className='escritorio icono'><img src={fav} /></Link>
+                <div className='escritorio icono'><img onClick={() => { mostrar(true) }} src={fav} /></div>
                 <Link href='/Carrito' className="icono"><img src={carrito} /></Link>
             </div>
         </header>

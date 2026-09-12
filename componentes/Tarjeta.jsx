@@ -3,12 +3,21 @@ import Silla from "../assets/Silla.png"
 import heart from "../assets/heart 1.png"
 import { Link } from "wouter"
 
-export default function Tarjeta( {producto} ) {
+import { useFavoritos } from "../context/FavoritosContext"
+
+export default function Tarjeta({ producto }) {
+    const { agregar } = useFavoritos()
+
+    function favorito(e) {
+        e.preventDefault();
+        agregar(producto);
+    }
+
 
     return (
         <Link href={`/Detalle_producto/${producto.id}`} className="card">
             <button className="card-fav" type="button">
-                <img src={heart} alt="Fav" />
+                <img src={heart} alt="Fav" onClick={e => { favorito(e) }} />
             </button>
 
             <img className="mueble-img" src={Silla} alt="Mueble" />
